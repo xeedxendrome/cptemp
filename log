@@ -1,0 +1,5 @@
+  int log(long long x)
+    {
+        return 64 - __builtin_clzl(x) - 1;
+    }
+    
