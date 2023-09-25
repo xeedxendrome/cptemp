@@ -1,0 +1,45 @@
+// vector easy output and input temp;
+template <typename T>
+ostream& operator <<(ostream& output, const vector<T>& data)
+{
+    for (const T& x : data)
+        output << x <<" ";
+    return output;
+}
+ 
+template<typename T>
+istream& operator>>(istream& input,vector<T>& data){
+    for (auto& item : data) {
+        input >> item;
+    }
+    return input;
+}
+// for taking the data for from file and passing to file   use in the main 
+/*freopen("problemname.in", "r", stdin);
+    freopen("problemname.out", "w", stdout);*/
+     // precision use in the main  
+    //cout<<fixed<<setprecision(15)<<endl;
+
+//shubh
+ #include<bits/stdc++.h> 
+    using namespace std; 
+    #define eps 1e-9
+    #define ll long long
+    #define ldb long double
+    #define pb push_back
+    #define be begin()
+    #define en end()
+    #define yes cout<<"YES"<<endl;
+    #define no cout<<"NO"<<endl;
+    #define err cout<<1<<endl;
+    #define f(i,s,e) for(ll i = s; i < e; i++)
+    #define modi 998244353
+    #define trav(a,x) for (auto& a : x)
+    #define all(v)  v.begin(),v.end()
+    #define rev(v) reverse(v.begin(),v.end())
+    #define srt(v) sort(v.begin(),v.end())
+    #define vec vector<ll>
+    #define rf(i,n,e) for(ll i=n-1;i>=e;i--)
+    #define neg cout<<-1<<endl;
+    #define PI 3.14159265359
+    #define sqrt(a) sqrtl(a)
